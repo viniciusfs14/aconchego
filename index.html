@@ -45,15 +45,12 @@
     
         <button onclick="startGame()">Joguinho</button>
 
-        <button>
-            Mensagens
-        </button>
+        <button onclick="mostrarMensagens()">Mensagens</button>
 
 
     </div>
 
     
-
     <div class="musica-container" style="display: none;">
 
         <div class="aviso" >
@@ -77,8 +74,46 @@
             <a href="https://open.spotify.com/intl-pt/track/2H4TYG8IkKIXeJFt2CLCaO?si=042dccb9a81641f4" target="_blank">Ouvir no Spotify</a>
           </div>
 
+
     </div>
 
+    <div id="mensagens-container" style="display: none; text-align: center; padding: 2rem;">
+        <h2>Mensagens para você 💌</h2>
+        <p>Com o passar do tempo eu irei adicionando mais mensagens 🤠</p>
+        
+        <div class="mensagens-container">
+            <button class="cartinha" onclick="mostrarMensagem(this)">
+                <div class="cartinha-front">
+                   💚
+                </div>
+                <div class="cartinha-back">Em dias de tempestade, eu sou o abrigo onde você pode se refugiar.</div>
+            </button>
+        
+            <button class="cartinha" onclick="mostrarMensagem(this)">
+                <div class="cartinha-front">❤️</div>
+                <div class="cartinha-back">Você é amada, você é importante, e eu estarei ao seu lado, sempre que precisar.</div>
+            </button>
+
+            <button class="cartinha" onclick="mostrarMensagem(this)">
+                <div class="cartinha-front">🤠</div>
+                <div class="cartinha-back">Nos dias em que as emoções forem grandes, saiba que o meu apoio é constante. Estou aqui, com paciência e carinho, pronto para te ajudar a passar por tudo.</div>
+            </button>
+
+            <button class="cartinha" onclick="mostrarMensagem(this)">
+                <div class="cartinha-front">🤠</div>
+                <div class="cartinha-back">Você tem o meu apoio incondicional. Não importa como o dia esteja, estou aqui ao seu lado, respeitando seu ritmo e suas necessidades.</div>
+            </button>
+
+            <button class="cartinha" onclick="mostrarMensagem(this)">
+                <div class="cartinha-front">💚</div>
+                <div class="cartinha-back">Você tem um cantinho no meu coração, sempre. Só chamar quando precisar.</div>
+            </button>
+        
+            <!-- Adicione mais cartinhas conforme necessário -->
+        </div>
+    
+        <button onclick="voltar()">Voltar</button>
+    </div>
     
     <script src="script.js"></script>
 </body>

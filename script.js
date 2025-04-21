@@ -60,4 +60,23 @@ function startGame() {
 
   // Mensagens
 
-  
+// Função para exibir a tela de mensagens
+function mostrarMensagens() {
+  // Esconde o conteúdo inicial
+  document.querySelector("#mensagem-inicial").style.display = "none";
+  // Exibe a nova tela com as cartinhas
+  document.querySelector("#mensagens-container").style.display = "block";
+}
+
+// Função para voltar à tela inicial
+function voltar() {
+  // Exibe o conteúdo inicial novamente
+  document.querySelector("#mensagem-inicial").style.display = "block";
+  // Esconde a tela das mensagens
+  document.querySelector("#mensagens-container").style.display = "none";
+}
+
+function mostrarMensagem(cartinha) {
+  // Alterna a visibilidade da parte de trás da cartinha
+  cartinha.classList.toggle('mostrar');
+}
