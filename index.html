@@ -25,24 +25,22 @@
         </h2>
         <p>
             Oi, meu bem... <br>
-            Outro dia, você me disse que queria ficar mais quietinha… que a sua borderline estava mais ativa e que o dia estava pesado. Desde então, fiquei com isso no coração.
 
-            Fiquei pensando em como eu podia estar perto, mesmo de longe.
-            Em como te oferecer aconchego nos dias em que o mundo pesa e as palavras somem. E foi aí que nasceu esse cantinho.
+            Aquele dia em que você me disse que queria ficar mais quietinha, que sua borderline estava mais ativa… aquilo ficou comigo. Fiquei pensando em como eu poderia estar por perto mesmo sem estar ao seu lado, em como te dar um respiro quando tudo parecer demais. <br>
 
-            Um lugar feito com ternura, calma e amor.
-            Só seu. <br>
-            Pra quando quiser respirar, sorrir um pouquinho ou apenas se lembrar do quanto você é amada. 
+            Foi daí que surgiu a ideia desse cantinho. Um lugar só seu, feito com calma e carinho.
+            Pra quando você quiser um momento de paz, pra quando precisar lembrar que é muito amada, mesmo nos dias difíceis. <br>
 
-            Aqui embaixo, tem dois botãozinhos especiais:
-            Um deles te leva pra um joguinho fofo, em homenagem àquela promessa que te fiz — de te dar um “bom dia nerd” toda segunda-feira, pra começar a semana com o pé direito e um sorriso no rosto.
-            <br>E o outro te leva pra mensagens pensadas com todo carinho, pra quando o coração apertar. São palavras pra te acolher nos dias mais difíceis, como um abraço quentinho que te diz: “tá tudo bem… eu tô aqui.”
+            Aqui embaixo tem dois botões simples, mas cheios de intenção:
+            Um te leva pra um joguinho que preparei com base na promessa que fiz de te dar um “bom dia nerd” toda segunda-feira só pra começar a semana com um toque leve e seu sorriso.
+            E o outro leva pra algumas mensagens pensadas com cuidado, pra te acolher quando o coração apertar. Não são soluções, mas são palavras que vêm do coração, como um abraço quando você precisar.
 
-            Você pode voltar sempre que quiser.
-            Esse cantinho é seu, e meu coração também. <br>
-
-            Com todo o meu amor, <br>
-            Seu bem.  
+            Você pode voltar aqui sempre que quiser. <br>
+            Esse cantinho é seu.
+            E, de um jeitinho só meu, eu também tô aqui por você... Sempre. Quando precisar de apoio, carinho ou só alguém pra te ouvir, estarei aqui ao seu lado, em cada passo, sem pressa e com todo o meu amor.
+            <br>
+            Com carinho, <br>
+            Seu bem 💚
         </p>
     
         <button onclick="startGame()">Joguinho</button>
@@ -54,16 +52,31 @@
 
     </div>
 
+    
+
     <div class="musica-container" style="display: none;">
-        <div class="botoes-musicais">
-            <button onclick = "playnote('do')">1</button>
-            <button onclick = "playnote('re')">2</button>
-            <button onclick = "playnote('mi')">3</button>
-            <button onclick = "playnote('fa')">4</button>
-            <button onclick = "playnote('sol')">5</button>
-            <button onclick = "playnote('la')">6</button>
-            <button onclick = "playnote('si')">7</button>
+
+        <div class="aviso" >
+            <p id="mensagem-inicial">
+                Gostaria de te dedicar uma música de uma maneira diferente haha, primeiro gostaria que você tocasse um trechinho dela, mas não se preocupe, é só tocar nos botões que estão piscando hehe
+            </p>
         </div>
+        
+        <div class="botoes-musicais">
+            <button data-note="do">C</button>
+            <button data-note="re">D</button>
+            <button data-note="mi">E</button>
+            <button data-note="fa">F</button>
+            <button data-note="sol">G</button>
+            <button data-note="la">A</button>
+            <button data-note="si">B</button>
+        </div>
+
+        <div id="mensagem-final" style="display: none; margin-top: 20px;">
+            <p>Haha parabéns meu bemmm, você completou a melódia da música que eu quero te dedicar... se você não reconheceu ainda, clica nesse link aqui em baixo hihi 💚 <br> Te amo</p>
+            <a href="https://open.spotify.com/intl-pt/track/2H4TYG8IkKIXeJFt2CLCaO?si=042dccb9a81641f4" target="_blank">Ouvir no Spotify</a>
+          </div>
+
     </div>
 
     

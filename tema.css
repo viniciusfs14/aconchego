@@ -1,133 +1,247 @@
 /* Paleta: Rosas suaves, branco e toques de lilás */
 :root {
-    --rosa-claro: #ffe4ec;
-    --rosa-medio: #f8b7cd;
-    --rosa-escuro: #e87aa4;
-    --branco: #fff8fb;
-    --lilas-suave: #e6d4f6;
-    --cinza-claro: #f3f3f3;
-    --texto-escuro: #5e4b56;
-    --fonte-fofa: 'Comic Neue', 'Poppins', sans-serif;
-  }
-  
-  body {
-    margin: 0;
-    padding: 0;
-    background: var(--rosa-claro);
-    font-family: var(--fonte-fofa);
-    color: var(--texto-escuro);
-    line-height: 1.6;
-    transition: background 0.3s ease;
-  }
-  
-  header {
-    background: var(--rosa-medio);
-    padding: 1rem 2rem;
-    text-align: center;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    border-bottom: 3px dashed var(--rosa-escuro);
-  }
-  
-  header h1 {
-    font-size: 2rem;
-    color: var(--rosa-escuro);
-  }
-  
-  .container {
-    max-width: 800px;
-    margin: 2rem auto;
-    background: var(--branco);
-    padding: 2rem;
-    border-radius: 1.5rem;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-    justify-content: center;
-    gap: 1rem;
-  }
-  
-  button {
-    background-color: var(--rosa-escuro);
-    color: white;
-    padding: 0.6rem 1.2rem;
-    border: none;
-    border-radius: 1rem;
-    cursor: pointer;
-    font-size: 1rem;
-    font-family: var(--fonte-fofa);
-    transition: background 0.3s ease;
-  }
-  
-  button:hover {
-    background-color: var(--rosa-medio);
-  }
-  
-  .card {
-    background: var(--lilas-suave);
-    padding: 1.5rem;
-    border-radius: 1rem;
-    margin: 1rem 0;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-  }
-  
-  a {
-    color: var(--rosa-escuro);
-    text-decoration: none;
-  }
-  
-  a:hover {
-    text-decoration: underline;
-  }
+  --rosa-claro: #ffe4ec;
+  --rosa-medio: #f8b7cd;
+  --rosa-escuro: #e87aa4;
+  --branco: #fff8fb;
+  --lilas-suave: #e6d4f6;
+  --cinza-claro: #f3f3f3;
+  --texto-escuro: #5e4b56;
+  --fonte-fofa: 'Comic Neue', 'Poppins', sans-serif;
+}
 
-/* Mensagem */
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--rosa-claro);
+  font-family: var(--fonte-fofa);
+  color: var(--texto-escuro);
+  line-height: 1.6;
+  transition: background 0.3s ease;
+}
 
-  #mensagem-inicial {
-    background-color: #ffe6f0;
-    padding: 2rem;
-    border-radius: 2rem;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    max-width: 600px;
-    margin: 2rem auto;
-    text-align: center;
-    font-family: 'Comic Sans MS', cursive, sans-serif;
-    color: #cc3366;
+/* Estilos para o header */
+header {
+  background: var(--rosa-medio);
+  padding: 1rem 2rem;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  border-bottom: 3px dashed var(--rosa-escuro);
+}
 
-  }
-  
-  #mensagem-inicial h2 {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-  }
-  
-  #mensagem-inicial p {
-    font-size: 1.3rem;
-    line-height: 1.8;
-    text-align: justify;
-  }
-  
-/* Blocos musicais*/
+header h1 {
+  font-size: 2rem;
+  color: var(--rosa-escuro);
+}
 
+/* Container centralizado */
+.container {
+  max-width: 800px;
+  margin: 2rem auto;
+  background: var(--branco);
+  padding: 2rem;
+  border-radius: 1.5rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  justify-content: center;
+  gap: 1rem;
+}
+
+/* Estilo dos botões */
+button {
+  background-color: var(--rosa-escuro);
+  color: white;
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 1rem;
+  cursor: pointer;
+  font-size: 1rem;
+  font-family: var(--fonte-fofa);
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background-color: var(--rosa-medio);
+}
+
+/* Estilo da mensagem inicial */
+#mensagem-inicial {
+  background-color: #ffe6f0;
+  padding: 2rem;
+  border-radius: 2rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: 2rem auto;
+  text-align: center;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  color: #cc3366;
+}
+
+#mensagem-inicial h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+#mensagem-inicial p {
+  font-size: 1.3rem;
+  line-height: 1.8;
+  text-align: justify;
+}
+
+/* Bloco musical */
 .musica-container {
-    display: flex;
-    justify-content: center;
-    margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 3rem;
+}
+
+.botoes-musicais {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.botoes-musicais button {
+  font-size: 3rem;
+  padding: 1rem 2rem;
+  background-color: #ffdfd4;
+  border: none;
+  border-radius: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.botoes-musicais button:hover {
+  background-color: #ffb0a7;
+}
+
+.destaque {
+  background-color: #ffcc00;
+  animation: piscar 0.5s infinite alternate;
+}
+
+@keyframes piscar {
+  from { transform: scale(1); }
+  to { transform: scale(1.1); }
+}
+
+.aviso {
+  max-width: 600px;
+  background-color: #fff4f0;
+  border: 2px solid #ffdfd4;
+  border-radius: 1.5rem;
+  padding: 1.5rem 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.2rem;
+  color: #5a3e36;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  animation: aparecer 1s ease-in-out;
+}
+
+@keyframes aparecer {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Estilo final da mensagem */
+#mensagem-final {
+  display: none;
+  margin-top: 30px;
+  padding: 20px;
+  background: linear-gradient(135deg, #ffe4ec 0%, #f9b4d2 100%);
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(255, 192, 203, 0.4);
+  text-align: center;
+  font-family: 'Georgia', serif;
+  color: #a83f68;
+  animation: fadeIn 1.2s ease forwards;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+#mensagem-final p {
+  font-size: 1.4em;
+  margin-bottom: 12px;
+}
+
+#mensagem-final a {
+  display: inline-block;
+  padding: 10px 18px;
+  background-color: #e75480;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 12px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#mensagem-final a:hover {
+  background-color: #d64572;
+  transform: scale(1.05);
+}
+
+@keyframes fadeIn {
+  to {
+      opacity: 1;
+      transform: translateY(0);
   }
-  
-  .botoes-musicais {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
+}
+
+/* Responsividade para diferentes tamanhos de tela */
+@media (max-width: 768px) {
+  header h1 {
+      font-size: 1.8rem;
   }
-  
+
+  .container {
+      padding: 1.5rem;
+  }
+
+  #mensagem-inicial h2 {
+      font-size: 2rem;
+  }
+
+  #mensagem-inicial p {
+      font-size: 1.1rem;
+  }
+
   .botoes-musicais button {
-    font-size: 3rem;
-    padding: 1rem 2rem;
-    background-color: #ffdfd4;
-    border: none;
-    border-radius: 1rem;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+      font-size: 2.5rem;
   }
   
-  .botoes-musicais button:hover {
-    background-color: #ffb0a7;
+  #mensagem-final p {
+      font-size: 1.2em;
   }
-  
+}
+
+@media (max-width: 480px) {
+  header h1 {
+      font-size: 1.6rem;
+  }
+
+  .container {
+      padding: 1rem;
+  }
+
+  #mensagem-inicial h2 {
+      font-size: 1.8rem;
+  }
+
+  #mensagem-inicial p {
+      font-size: 1rem;
+  }
+
+  .botoes-musicais button {
+      font-size: 2rem;
+      padding: 0.8rem 1.5rem;
+  }
+
+  #mensagem-final p {
+      font-size: 1.1em;
+  }
+}
