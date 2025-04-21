@@ -20,7 +20,6 @@ body {
   transition: background 0.3s ease;
 }
 
-/* Estilos para o header */
 header {
   background: var(--rosa-medio);
   padding: 1rem 2rem;
@@ -34,7 +33,6 @@ header h1 {
   color: var(--rosa-escuro);
 }
 
-/* Container centralizado */
 .container {
   max-width: 800px;
   margin: 2rem auto;
@@ -46,7 +44,6 @@ header h1 {
   gap: 1rem;
 }
 
-/* Estilo dos botões */
 button {
   background-color: var(--rosa-escuro);
   color: white;
@@ -63,7 +60,25 @@ button:hover {
   background-color: var(--rosa-medio);
 }
 
-/* Estilo da mensagem inicial */
+.card {
+  background: var(--lilas-suave);
+  padding: 1.5rem;
+  border-radius: 1rem;
+  margin: 1rem 0;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+a {
+  color: var(--rosa-escuro);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Mensagem */
+
 #mensagem-inicial {
   background-color: #ffe6f0;
   padding: 2rem;
@@ -87,18 +102,21 @@ button:hover {
   text-align: justify;
 }
 
-/* Bloco musical */
+/* Blocos musicais */
 .musica-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-top: 3rem;
+  padding: 0 1rem; /* Adicionando padding para evitar o corte em telas menores */
 }
 
 .botoes-musicais {
   display: flex;
   justify-content: center;
   gap: 1rem;
+  flex-wrap: wrap; /* Permite que os botões quebrem para a próxima linha em telas pequenas */
+  margin-top: 1rem;
 }
 
 .botoes-musicais button {
@@ -109,6 +127,8 @@ button:hover {
   border-radius: 1rem;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  width: auto; /* Garante que o botão não ultrapasse o limite da tela */
+  max-width: 90%; /* Limita o tamanho máximo em telas menores */
 }
 
 .botoes-musicais button:hover {
@@ -125,6 +145,31 @@ button:hover {
   to { transform: scale(1.1); }
 }
 
+/* Media Queries para dispositivos móveis */
+@media (max-width: 768px) {
+  .botoes-musicais button {
+      font-size: 2rem; /* Ajusta o tamanho da fonte para dispositivos menores */
+      padding: 0.8rem 1.5rem; /* Reduz o tamanho do botão */
+  }
+}
+
+@media (max-width: 480px) {
+  .musica-container {
+      margin-top: 2rem; /* Ajusta o espaçamento em dispositivos muito pequenos */
+  }
+
+  .botoes-musicais {
+      flex-direction: column; /* Coloca os botões em uma coluna */
+      gap: 0.8rem; /* Menor espaço entre os botões */
+  }
+
+  .botoes-musicais button {
+      width: 100%; /* Faz os botões ocuparem toda a largura disponível */
+      font-size: 1.8rem; /* Ajusta o tamanho da fonte ainda mais para telas muito pequenas */
+  }
+}
+
+/* Avisos */
 .aviso {
   max-width: 600px;
   background-color: #fff4f0;
@@ -145,7 +190,6 @@ button:hover {
   to { opacity: 1; transform: translateY(0); }
 }
 
-/* Estilo final da mensagem */
 #mensagem-final {
   display: none;
   margin-top: 30px;
@@ -189,59 +233,5 @@ button:hover {
   to {
       opacity: 1;
       transform: translateY(0);
-  }
-}
-
-/* Responsividade para diferentes tamanhos de tela */
-@media (max-width: 768px) {
-  header h1 {
-      font-size: 1.8rem;
-  }
-
-  .container {
-      padding: 1.5rem;
-  }
-
-  #mensagem-inicial h2 {
-      font-size: 2rem;
-  }
-
-  #mensagem-inicial p {
-      font-size: 1.1rem;
-  }
-
-  .botoes-musicais button {
-      font-size: 2.5rem;
-  }
-  
-  #mensagem-final p {
-      font-size: 1.2em;
-  }
-}
-
-@media (max-width: 480px) {
-  header h1 {
-      font-size: 1.6rem;
-  }
-
-  .container {
-      padding: 1rem;
-  }
-
-  #mensagem-inicial h2 {
-      font-size: 1.8rem;
-  }
-
-  #mensagem-inicial p {
-      font-size: 1rem;
-  }
-
-  .botoes-musicais button {
-      font-size: 2rem;
-      padding: 0.8rem 1.5rem;
-  }
-
-  #mensagem-final p {
-      font-size: 1.1em;
   }
 }
